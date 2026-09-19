@@ -4,31 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signup</title>
+   <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
-      <h2>Signup Here</h2>
-      <nav>
-        <a href="dashboard.html">Taskflow</a>
-        <a href="index.html">Home</a>
-        <a href="login.html">Login</a>
-        <a href="signup.html">Signup</a>
-      </nav>
+      <h2 class="taskflow">TaskFlow</h2>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="login.html">Login</a>
+          <a href="signup.html" class="active">Signup</a>
+        </nav>
     </header>
     <br />
-    <h2>Create Your Account</h2>
-    <p>Join The Team And Start Managing Your Task Today</p>
+    
     <form action="">
-      <lable for="name">Name</lable><br />
-      <input type="text" id="name" /><br /><br />
-      <lable for="email">Email</lable><br />
-      <input type="email" id="email" /><br /><br />
-      <lable for="password">Password</lable><br />
-      <input type="password" id="password" /><br /><br />
-      <input type="submit" value="Create Account" /><br /><br />
+      <h2>Create Your Account</h2>
+      <p>Join The Team And Start Managing Your Task Today</p>
+      <label for="name">Name</label>
+      <input type="text" id="name" />
+      <label for="email">Email</label>
+      <input type="email" id="email" />
+      <label for="password">Password</label>
+      <input type="password" id="password" />
+      <input type="submit" value="Create Account" />
       <p>
-        Already have an account? Click
-        <span><a href="login.html">Here</a></span> to Login
+        Already have an account?
+        <a href="login.html" class = "already">Login</a>
       </p>
     </form>
   </body>

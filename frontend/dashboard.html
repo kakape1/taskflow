@@ -4,35 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
-      <h2>Login</h2>
+      <h2 class="taskflow">TaskFlow</h2>
       <nav>
-        <a href="dashboard.html">Taskflow</a>
         <a href="index.html">Home</a>
-        <a href="signup.html">sign Up</a>
-        <a href="login.html">Login</a>
-        <a href="dashboard.html">Dashboard</a>
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="login.html">logout</a>
       </nav>
     </header>
-    <br />
-    <h1>Dashboard</h1>
-    <h2>Your Task Here</h2>
-    <p><strong>Total Task: 8 </strong></p>
-    <p><strong>Completed Task: 5 </strong></p>
-    <p><strong>Pending: 2 </strong></p>
-    <br />
-
-    <h3>Task List</h3>
-    <ul>
-      <li>Complete HTML Assigment</li>
-      <li>Read JavaSript notes</li>
-      <li>Build Taskflow project</li>
-      <li>Go for a walk</li>
-      <li>Plan next week</li>
-    </ul>
-    <a href="login.html">Add a new task</a><br /><br />
+    <div class="dashboard-task">
+      <div>
+        <h1>Your Tasks</h1>
+        <p>Overview Of  Your Tasks Here</p>
+      </div>
+      <div>
+        <a href="login.html" class="new-task">Add a new task</a>
+      </div>
+    </div>
+    <div class="task-overview">
+        <div>
+          <p>Total Task:</p>
+          <p class="strong" style="color: blue;"><strong>8 </strong></p>
+        </div>
+        <div>
+          <p>Completed Task:</p>
+          <p class="strong" style="color: rgb(3, 152, 3);"><strong>5 </strong></p>
+        </div>
+        <div>
+          <p>Pending:</p>
+          <p class="strong"  style="color: rgb(143, 143, 2)"><strong>2 </strong></p>
+        </div>
+    </div>
+    
+    <div class = "task-list">
+      <h3>Task List</h3>
+      <ul>
+        <li class="task-completed">Complete HTML Assigment</li>
+        <li>Read JavaSript notes</li>
+        <li>Build Taskflow project</li>
+        <li>Go for a walk</li>
+        <li>Plan next week</li>
+      </ul>
+    </div>
+    
     <footer>&copy;Taskflow. All rights Reserved.</footer>
   </body>
 </html>
