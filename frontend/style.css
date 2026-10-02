@@ -1,11 +1,108 @@
 body{
     background: rgba(220, 239, 249, 0.705);
 }
+
+
+/*Phone view*/
 .taskflow{
     color: blue;
+    margin: 0;
 }
 header{
+    background: rgba(235, 244, 248, 0.664);
+    width: 30vw;
+    height: 25vh;
+    display: block;
+    padding: 2px;
+    box-shadow: 0 0 2px black;
+    
+}
+nav{
+    display: block;     
+}
+nav a{
+    display: block;
+    margin: 5px;
+    color: rgb(38, 1, 1);
+    text-decoration: none;
+}
+nav a.active{
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    background-color: blue;
+    width: 100px;
+    text-align: center;
+}
+.hero{
+    /*position: relative;
+    overflow: hidden;*/
+    width: 100%;
+    margin: 10px;
+    height: 80px;
+    font-size: 0.7rem;
+    background: linear-gradient(135deg, rgb(234, 247, 253),rgb(127, 216, 249));
+    padding: 5px 3px 20px;
+    border-radius: 5px;
+}
+.why-taskflow{
+   margin: 20px  10px;
+   color: rgb(25, 25, 55);
+   position: relative;
+   top: 130px;
+}
+.footer{
+    position: relative;
+    top: 140px;
+}
+.hero p{
+    margin-top: 50px;
+}
+.dashboard-task{
+    margin: 0 15px;
+    display: block;
+}
+.task-overview{
+  background: linear-gradient(135deg, rgb(234, 247, 253),rgb(127, 216, 249));
+    padding: 0  60px;
+    display: block;
+    position: relative;
+    top: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 1px black;
+}
+.total-task{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.dashboard-task .Your-task{
+   text-align: center;
+}
+
+form{
+    background: white;
+    padding: 10px;
+    width: 85%;
+    height: 55vh;
+    margin:  20px auto;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px black;
+}
+
+
+    /*Desktop view*/
+
+@media screen and (min-width:768px){
+    .taskflow{
+    color: blue;
+    margin: 10px;
+    }
+    header{
     background: rgba(216, 238, 247, 0.664);
+    width: auto;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,26 +115,80 @@ nav{
     display: flex;
     gap: 60px;   
 }
-nav a{
-    color: rgb(38, 1, 1);
-    text-decoration: none;
-}
+
 nav a.active{
     font-size: 17px;
     font-weight: bold;
     color: blue;
     text-decoration: underline;
     text-underline-offset: 6px;
-    text-decoration-thickness: 3px;
+    text-decoration-thickness: 5px;
+    background-color: transparent;
+    }
+    nav a{
+    display: block;
+    margin: 5px;
+    color: rgb(38, 1, 1);
+    text-decoration: none;
 }
+.hero{
+    /*position: relative;
+    overflow: hidden;*/
+    width: 80%;
+    margin: 10px 30px;
+    height: 80px;
+    font-size: 1rem;
+    background: linear-gradient(135deg, rgb(234, 247, 253),rgb(136, 221, 252));
+    padding: 8px 8% 30px;
+}
+.why-taskflow{
+   margin: 30px 70px;
+   color: rgb(25, 25, 55);
+   position: relative;
+   top: 80px;
+}
+.footer{
+    position: relative;
+    top: 60px;
+}
+.dashboard-task{
+    margin: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.task-overview{
+   background: linear-gradient(135deg, rgb(234, 247, 253),rgb(127, 216, 249));
+    padding: 0  60px;
+    margin: 0 15px;
+    gap: 30%;
+    display: flex;
+    /*position: fixed;*/
+    margin-top: 0;
+    border-radius: 8px;
+    box-shadow: 0 0 1px black;
+}
+.total-task{
+    display: block;
+    gap: none;
+   
+}
+
 form{
     background: white;
     padding: 30px;
     width: 35%;
+    height: auto;
     margin:  10px auto;
     border-radius: 15px;
     box-shadow: 0 2px 8px black;
 }
+
+}
+
+
+
+
 form h2{
     text-align: center;
     color: rgb(3, 3, 85);
@@ -86,12 +237,7 @@ input[type = "submit"]:hover{
     text-decoration: none;
     font-weight: bold;
 }
-.dashboard-task{
-    margin: 0 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 .new-task{
      width: 70px;
     padding: 10px;
@@ -107,16 +253,7 @@ input[type = "submit"]:hover{
 .new-task:hover{
     background: rgb(3, 201, 3);
 }
-.task-overview{
-    background: rgba(195, 234, 249, 0.664);
-    padding: 0  60px;
-    margin: 0 15px;
-    gap: 30%;
-    display: flex;
-    margin-top: 0;
-    border-radius: 8px;
-    box-shadow: 0 0 1px black;
-}
+
 .strong{
     text-align: center;
     font-size: 25px;
@@ -125,9 +262,10 @@ input[type = "submit"]:hover{
 }
 .task-list{
     background: white;
-    margin: 15px;
+    margin: 8px;
     padding: 5px;
     border-radius: 8px;
+
 }
 .task-list ul li{
     list-style: none;
@@ -168,18 +306,9 @@ h1{
     color: rgb(1, 1, 53);
 
 }
-.hero{
-    position: relative;
-    overflow: hidden;
-    min-height: 200px;
-    background: linear-gradient(135deg, rgb(234, 247, 253),rgb(197, 234, 248));
-    padding: 8px 8% 40px;
-}
 
-.why-taskflow{
-   margin-left: 70px;
-   color: rgb(25, 25, 55);
-}
+
+
 .get-started{
     text-decoration: none;
     width: 100%;
@@ -191,6 +320,7 @@ h1{
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+    
 }
 .get-started:hover{
     background: rgb(3, 201, 3);
