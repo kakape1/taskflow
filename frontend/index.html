@@ -4,31 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing</title>
-    <link rel="stylesheet" href="style.css">
+    <!--<link rel="stylesheet" href="style.css"-->
+    <link rel="stylesheet" href="./output.css">
   </head>
-  <body>
-    <header>
-     <h2 class="taskflow">TaskFlow</h2>
-      <nav>
+  <body class="bg-blue-50">
+    <header class="text-lg bg-green-500  md:bg-blue-300 block md:flex  md:justify-between md:items-center h-40 md:h-16 px-4 pt-2 md:pt-0 mx-2 md:mx-4 mt-2 mb-1 w-[28%] md:w-full rounded-lg shadow shadow-black">
+     <h2 class="text-[blue] font-bold">TaskFlow</h2>
+      <nav class="block md:flex md:gap-8 font-medium">
         <a href="dashboard.html">Dashboard</a>
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html" class="underline decoration-4 underline-offset-6 font-medium text-[white] md:text-[blue]">Home</a>
         <a href="login.html">login</a>
         <a href="signup.html">sign Up</a>
       </nav>
     </header>
-    <section class="hero">
+    <section class="block mb-4  p-2 md:p-6  h-45 md:h-65 bg-gradient-to-l form-yellow-200 to-yellow-300">
       
-        <h1>Your Task Simplified. <br><span style="color: blue;">Your Goals Achieved with Ease</span></h1>
-        <p style="color: rgb(25, 25, 55) ;">
+        <h1 class="text-2xl md:text-4xl font-bold md:mb-4 h-20 md:h-32 pt-2 md:pt-4 ml-1 md:ml-16 bg-gradient-to-r form-sky-100 to-cyan-300">Your Task Simplified. <br><span class="text-[blue]">Your Goals Achieved with Ease</span></h1>
+        <p class="ml-1 md:ml-16 mb-2 md:mb-4">
           Taskflow brings clarity to you workflow through planning, so you can focus
           on the most important.
         </p>
-        <a href="signup.html" class="get-started">Get Started</a>
+        <a href="signup.html" class="ml-1 md:ml-16 inline-flex w-32 h-9 text-white font-medium items-center justify-center bg-blue-700 hover:bg-green-500 rounded-lg">Get Started</a>
      
     </section>
-    <div class="why-taskflow">
-      <h3>Why Choose Taskflow</h3>
-      <ul>
+    <div class="ml-1 md:ml-14  pl-2 md:pl-0 bg-gradient-to-r form-sky-100 to-cyan-300">
+      <h3 class="font-bold mb-3">Why Choose Taskflow</h3>
+      <ul class="ml-4 md:ml-16 list-disc">
         <li>
           <strong>Manages Task</strong><br />Create and organize task with due
           dates.
@@ -44,6 +45,6 @@
       </ul>
     </div>
 
-    <footer class="footer">&copy;Taskflow. All rights Reserved.</footer>
+    <footer class="p-3">&copy;Taskflow. All rights Reserved. Kakape</footer>
   </body>
 </html>

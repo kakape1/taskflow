@@ -4,53 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <!--<link rel="stylesheet" href="style.css">-->
+    <link rel="stylesheet" href="./output.css">
   </head>
-  <body>
-    <header>
-      <h2 class="taskflow">TaskFlow</h2>
-      <nav>
+  <body class="font-serif bg-blue-50">
+    <header class="text-lg bg-green-500  md:bg-blue-300 block md:flex  md:justify-between md:items-center h-30 md:h-16 px-4 pt-2 md:pt-0 mx-2 md:mx-4 mt-2 mb-1 w-[30%] md:w-full rounded-lg shadow shadow-black">
+      <h2 class="text-[blue] font-bold">TaskFlow</h2>
+      <nav class="block md:flex md:gap-8 font-medium ">
         <a href="index.html">Home</a>
-        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="dashboard.html" class="underline decoration-4 underline-offset-6 font-medium text-[white] md:text-[blue]">Dashboard</a>
         <a href="login.html">logout</a>
       </nav>
     </header>
     
-      <div class="dashboard-task">
+      <div class="block md:flex md:items-center md:justify-between mx-4 mb-2 md:mb-8">
         <div class="Your-task">
-          <h1>Your Tasks</h1>
-          <p>Overview Of  Your Tasks Here</p>
+          <h1 class="  mt-3 md:ml-8 text-lg md:text-2xl font-bold md:mb-4">Your Tasks</h1>
+          <p class="mb-1 md:mb-4 md:text-lg">Overview Of  Your Tasks Here</p>
         </div>
         <div>
-          <a href="login.html" class="new-task">Add a new task</a>
+          <a href="login.html" class="md:ml-16 inline-flex w-32 h-9 text-white font-medium items-center justify-center bg-blue-700 hover:bg-green-500 rounded-lg">Add a new task</a>
         </div>
       </div>
-      <div class="task-overview">
-          <div class="total-task">
+      <div class="md:flex md:justify-between md:items-center mx-4 h-30 md:h-32 bg-gradient-to-r form-sky-100 to-cyan-300 p-4 rounded-lg text-lg font-bold">
+          <div class="flex md:block gap-2">
             <p>Total Task:</p>
-            <p class="strong" style="color: blue;"><strong>8 </strong></p>
+            <p class="text-[blue] text-2xl text-center"><strong>8 </strong></p>
           </div>
-          <div  class="total-task">
+          <div  class="flex md:block gap-2">
             <p>Completed Task:</p>
-            <p class="strong" style="color: rgb(3, 152, 3);"><strong>5 </strong></p>
+            <p class="text-green-500 text-2xl text-center"><strong>5 </strong></p>
           </div>
-          <div  class="total-task">
+          <div  class="flex md:block gap-2">
             <p>Pending:</p>
-            <p class="strong"  style="color: rgb(143, 143, 2)"><strong>2 </strong></p>
+            <p class="text-yellow-500 text-2xl text-center"><strong>2 </strong></p>
           </div>
       </div>
     
-    <div class = "task-list">
-      <h3>Task List</h3>
-      <ul>
-        <li class="task-completed">Complete HTML Assigment</li>
-        <li>Read JavaSript notes</li>
-        <li>Build Taskflow project</li>
-        <li>Go for a walk</li>
-        <li>Plan next week</li>
+    <div class="bg-gradient-to-l form-sky-100 to-cyan-300 p-4 m-4 rounded-lg">
+      <h3 class="text-2xl font-bold ml-2">Task List</h3>
+      <ul class="ml-16">
+        <li class = "before:content-['✔️'] before:inline-block before:w-[15px] before:h-[15px] before:bg-blue-500 before: before:border-2 before:border-black before:mr-[15px] text-gray-500 line-through" >Complete HTML Assigment</li>
+        <li class = "before:content-[''] before:inline-block before:w-[15px] before:h-[15px] before:border-2 before:border-black before:mr-[15px]">Read JavaSript notes</li>
+        <li class = "before:content-[''] before:inline-block before:w-[15px] before:h-[15px] before:border-2 before:border-black before:mr-[15px]">Build Taskflow project</li>
+        <li class = "before:content-[''] before:inline-block before:w-[15px] before:h-[15px] before:border-2 before:border-black before:mr-[15px]">Go for a walk</li>
+        <li class = "before:content-[''] before:inline-block before:w-[15px] before:h-[15px] before:border-2 before:border-black before:mr-[15px]">Plan next week</li>
       </ul>
     </div>
     
-    <footer>&copy;Taskflow. All rights Reserved.</footer>
+    <footer class="ml-2">&copy;Taskflow. All rights Reserved Kakape.</footer>
   </body>
 </html>
